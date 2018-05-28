@@ -1,0 +1,175 @@
+/* Vincent Goh */
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes intro {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes intro {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes intro {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes intro {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-m-keyframes intro {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.intro{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(../images/valley.png) no-repeat 50% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+  display: table;
+  top: 0;
+  background-size: cover;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+
+.intro:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(161, 216, 228, 0.35);
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+}
+
+.intro .inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 25%;
+}
+
+.animated{
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+}
+
+.content h1{
+  font-family: 'Yantramanav', san-serif !important;
+  font-size: 600% !important;
+  font-weight: 100;
+  color: #E1EFE9;
+  line-height: 70%;
+}
+
+.btn{
+  font-family: 'Montserrat', san-serfic !important;
+  font-size: 135%;
+  font-weight: 400;
+  color: #3A6168;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid #3A6168;
+  border-radius: 9px;
+  padding: 10px 20px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+
+.btn:hover{
+  color: #CBDFD6;
+  border: solid #CBDFD6 2px;
+}
+
+p{
+  font-size: 150%;
+  line-height: 120%;
+  font-family: san-serif;
+}
+/* -- Media Queries -- */
+@media screen and (max-width: 900px){
+  .content{
+    padding-bottom: 30%;
+  }
+  .content h1{
+    font-size: 450% !important;
+  }
+  .btn {
+    font-size: 150%;
+    padding: 9px 17px;
+  }
+}
+@media screen and (max-width: 768px){
+  .content{
+    padding-bottom: 40%;
+  }
+  .content h1{
+    font-size: 300% !important;
+  }
+  .btn {
+    font-size: 150%;
+    padding: 7px 15px;
+  }
+  p{
+    font-size: 120%;
+    line-height: 100%;
+  }
+}
+@media screen and (max-width: 480px){
+  .content{
+    padding-bottom: 50%;
+  }
+  .content h1{
+    font-size: 250% !important;
+  }
+  .btn {
+    font-size: 110%;
+    padding: 6px 14px;
+  }
+  p{
+    font-size: 100%;
+    line-height: 100%;
+  }
+}
