@@ -8,6 +8,7 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
+    background-color: #f3f3f3 !important;
 }
 
 .delay-0x5{
@@ -34,6 +35,56 @@ body, html {
   animation-delay: 1s;
 }
 
+.custom-font-Yantramanav{
+    font-family: 'Yantramanav', san-serif !important;
+}
+
+.custom-font-Montserrat{
+    font-family: 'Montserrat', san-serif !important;
+}
+
+.custom-lightblue-links{
+  color: #25a9de !important;
+  font-weight: bold;
+  text-decoration: none !important;
+
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -ms-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.custom-lightblue-links:hover{
+  text-decoration: underline !important;
+  color: #41c9ff !important;
+
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -ms-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.custom-noPadding{
+  padding: 0;
+}
+
+.custom-noRightPadding{
+  padding-right: 0;
+}
+
+.custom-noLeftPadding{
+  padding-left: 0;
+}
+
+.custom-noBottomPadding{
+  padding-bottom: 0;
+}
+
+.custom-floatRight{
+  float: right;
+}
 
 @-webkit-keyframes hue {
   from {
@@ -250,11 +301,30 @@ p{
 
 
 
+/* Personal details */
+
+.personal-details-li{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+  font-size: 18px;
+}
+
+.personal-details-li > label{
+  font-weight: bold;
+}
+
 
 /* Bio */
+
+#bio_section{
+  display: none;
+}
+
 .center-bio{
   position: relative;
   bottom: 15%;
+  margin-bottom: -6%;
 }
 
 #bio_div{
@@ -262,6 +332,74 @@ p{
   background-color: #333333;
 }
 
+#bio_profile{
+  font-size: 200%;
+  padding-bottom: 0.5em;
+}
+
+#bio_profile_paragraph{
+  font-size: 130%;
+}
+
+
+
+/* Main body */
+
+.main-body{
+}
+
+.main-body-titles{
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+#work_experience_title{
+  font-size: 250%;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+  border: 1px solid gray;
+}
+
+.work-experience-leftInfo{
+  border-right: 1px solid gray;
+  padding: 1.5em 1.5em;
+}
+
+.work-experience-rightInfo{
+  padding: 1.5em 1.5em;
+}
+
+
+.work-experience-companyTitle{
+  text-align: right;
+  margin-top: 1em;
+}
+
+.work-experience-date{
+  font-size: 60%;
+  text-align: right;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.work-experience-year{
+  font-size: 170%;
+  text-align: right;
+}
+
+.work-experience-line{
+  border-top: 1px solid black;
+}
+
+.work-experience-jobDesc{
+  font-size: 130%;
+}
+
+.work-experience-jobParagraph{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: black;
+}
 
 
 /* -- Media Queries -- */

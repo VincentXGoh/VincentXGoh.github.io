@@ -6,7 +6,7 @@
     <meta name="Description" content="Resume of Vincent Goh">
     <meta name="keywords" content="Vincent Goh, Vincent, Goh, VincentXGoh, JavaScript, UI/UX, Front End Developer">
 
-    <link rel="stylesheet" href="./styles/styles.css">
+
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -17,7 +17,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
-
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="scripts/index.js"></script>
 </head>
 <body>
     <nav class="navbar is-transparent is-fixed-top">
@@ -57,38 +58,95 @@
         </div>
     </section>
 
-    <section class="center-bio animated fadeInUp delay-1x0">
+    <section class="center-bio" id="bio_section">
       <div class="container">
         <div class="notification" id="bio_div">
-          Enthusiastic and fast-learning Software Engineer with a history of working in the information technology and banking services industry for 1+ years, programming and UI/UX design for various projects.
-
-          Experienced in SAFe development methodologies. Skilled in JavaScript, jQuery, HTML, CSS, troubleshooting, and debugging. Knowledge in ReactJS, Java and Ajax.
-
-          Enthusiastic and fast-learning Software Engineer with a history of working in the information technology and banking services industry for 1+ years, programming and UI/UX design for various projects.
-
-          Experienced in SAFe development methodologies. Skilled in JavaScript, jQuery, HTML, CSS, troubleshooting, and debugging. Knowledge in ReactJS, Java and Ajax.
-
-          Enthusiastic and fast-learning Software Engineer with a history of working in the information technology and banking services industry for 1+ years, programming and UI/UX design for various projects.
-
-          Experienced in SAFe development methodologies. Skilled in JavaScript, jQuery, HTML, CSS, troubleshooting, and debugging. Knowledge in ReactJS, Java and Ajax.
+          <article class="media">
+              <figure class="media-left">
+                <p class="image">
+                  <img style="width: auto; height: 256px;" src="./images/me.jpg">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="columns">
+                  <div class="column">
+                      <ul class="custom-font-Yantramanav">
+                          <li class="personal-details-li"><label>Name:</label> Vincent Goh</li>
+                          <li class="personal-details-li"><label>Education:</label> Bachelors of Science in Software Engineering, ASU</li>
+                          <li class="personal-details-li"><label>Residency:</label> 85251, Scottsdale, AZ</li>
+                          <li class="personal-details-li"><label>Phone:</label> +1 480 772 0837</li>
+                          <li class="personal-details-li"><label>Email:</label> <a href="mailto:vincentxgoh@gmail.com" class="custom-lightblue-links">vincentxgoh@gmail.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="column">
+                      <h1 id="bio_profile">Profile</h1>
+                      <p class="custom-font-Yantramanav" id="bio_profile_paragraph">
+                        Enthusiastic and fast-learning Software Engineer with a history of working in the information technology and banking services industry for 1+ years, programming and UI/UX design for various projects.
+                        </br>
+                        Experienced in SAFe development methodologies. Skilled in JavaScript, jQuery, HTML, CSS, troubleshooting, and debugging. Knowledge in ReactJS, Java and Ajax.
+                      </p>
+                  </div>
+                </div>
+              </div>
+          </article>
         </div>
       </div>
     </section>
-    <p>
-      What is Lorem Ipsum?
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-      Why do we use it?
-      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    <section class="main-body">
+      <div class="container">
+        <div class="notification" id="">
+          <div class="media-content">
 
+            <div class="main-body-titles">
+                <h1 id="work_experience_title">WORK EXPERIENCE</h1>
+            </div>
 
-      Where does it come from?
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <article class="tile is-child work-experience-leftInfo">
+                    <div class="columns">
+                      <div class="column custom-noLeftPadding custom-noBottomPadding">
+                        <p class="subtitle work-experience-date">DECEMBER</p>
+                      </div>
+                      <p style="font-size: 222%; height: 0; color: transparent;"> - </p>
+                      <div class="column custom-noLeftPadding custom-noBottomPadding">
+                      </div>
+                    </div>
 
-      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    <div class="columns">
+                      <div class="column custom-noLeftPadding">
+                        <span class="title custom-font-Montserrat work-experience-year custom-floatRight">2016</span>
+                      </div>
+                      <p style="font-size: 222%;"> - </p>
+                      <div class="column custom-noLeftPadding">
+                        <span class="title custom-font-Montserrat work-experience-year custom-floatRight">Present</span>
+                      </div>
+                    </div>
 
-      Where can I get some?
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-    </p>
+                    <div class="work-experience-line"></div>
+
+                    <p class="title custom-font-Yantramanav work-experience-companyTitle"><a class="custom-lightblue-links">Syntel Inc.</a></p>
+
+                </article>
+              </div>
+
+              <div class="tile is-parent is-9">
+                <article class="tile is-child work-experience-rightInfo">
+                  <p class="title custom-font-Yantramanav work-experience-jobDesc">JOB DESCRIPTION</p>
+                  <p class="work-experience-jobParagraph">Programmer Analyst (American Express - Software Engineer Midrange)</p>
+                  <p class="work-experience-jobParagraph">
+                    Responsible for leading the UI/UX design, uplifting and implementing for an Internal Business Application
+                    using JavaScript, jQuery, HTML, CSS, and Ajax. Integrated with RESTful web service Java Springs.
+                  </p>
+                </article>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
